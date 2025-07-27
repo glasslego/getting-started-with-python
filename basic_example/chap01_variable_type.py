@@ -82,6 +82,10 @@ def main():
 # 스크립트가 직접 실행될 때만 main() 함수 호출
 if __name__ == "__main__":
     # 이전 예제의 변수를 사용하기 위해 여기서 선언
-    name = "Alice"
-    age = 25
-    main()
+    # name = "Alice"
+    # age = 25
+    # main()
+
+    my_name = "Alice"
+    my_age = "25A"
+    print(f"이름: {my_name}, 나이: {int(age)}")

@@ -1,9 +1,11 @@
-import datetime
+# import datetime
 import importlib
 import os
 import random
 
 import math_utils
+
+from datetime import datetime
 
 
 # 5.1 모듈
@@ -77,4 +79,6 @@ def main():
 
 # 스크립트가 직접 실행될 때만 main() 함수 호출
 if __name__ == "__main__":
-    main()
+    # main()
+    # print(datetime.now())
+    print(datetime.now())

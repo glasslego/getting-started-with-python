@@ -77,6 +77,10 @@ def demonstrate_conditionals():
     print("\n--- 2.1.5 삼항 연산자 ---")
     age = 20
     status = "성인" if age >= 18 else "미성년자"
+    # if age >= 18:
+    #     status = "성인"
+    # else:
+    #     status = "미성년자"
     print(f"age가 {age}일 때, status는? {status}")
 
     def get_abs(x):
@@ -98,6 +102,8 @@ def demonstrate_loops():
     print("리스트 반복:")
     for fruit in fruits:
         print(f"과일: {fruit}")
+
+    print(fruits[0])
 
     print("\nrange() 함수 사용:")
     for i in range(5):
@@ -169,6 +175,11 @@ def demonstrate_loops():
     # 2.2.4 리스트 컴프리헨션
     print("\n--- 2.2.4 리스트 컴프리헨션 ---")
     numbers = [1, 2, 3, 4, 5]
+    # squares =[]
+    # for number in numbers:
+    #     print(f"숫자: {number}")
+    #     squares.append(number ** 2)
+
     squares = [x**2 for x in numbers]
     print(f"제곱 결과: {squares}")
 

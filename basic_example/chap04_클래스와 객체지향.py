@@ -7,7 +7,7 @@ def chap4_1_class_basics():
     class Person:
         species = "Homo sapiens"
 
-        def __init__(self, name, age):
+        def __init__(self, name:str, age:int):
             self.name = name
             self.age = age
 
@@ -20,6 +20,7 @@ def chap4_1_class_basics():
 
     person1 = Person("Alice", 25)
     print(person1.introduce())
+    print(person1.species)
     person1.have_birthday()
     print(f"종: {Person.species}")
 

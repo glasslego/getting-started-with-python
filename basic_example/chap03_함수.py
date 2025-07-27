@@ -12,12 +12,12 @@ def chap3_1_definition_and_call():
 
     greet()
 
-    def greet_person(name):
+    def greet_person(name:str):
         print(f"안녕하세요, {name}님!")
 
     greet_person("Alice")
 
-    def add(a, b):
+    def add(a:int, b:int) -> int:
         return a + b
 
     result = add(3, 5)

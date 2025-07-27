@@ -109,6 +109,7 @@ def chap8_4_best_practices():
         print("로깅 예제: 0으로 나누기 예외를 처리했습니다.")
 
     # 컨텍스트 매니저
+    # TODO 더 알아보기
     class SafeFileManager:
         def __init__(self, filename, mode):
             self.filename = filename
@@ -141,9 +142,9 @@ def chap8_4_best_practices():
 # 메인 함수 정의
 def main():
     print("### Chap08: 예외 처리 예제 실행 ###")
-    chap8_1_exception_basics()
-    chap8_2_built_in_exceptions()
-    chap8_3_custom_exceptions()
+    # chap8_1_exception_basics()
+    # chap8_2_built_in_exceptions()
+    # chap8_3_custom_exceptions()
     chap8_4_best_practices()
     print("\n### 예제 실행 완료 ###")
 
