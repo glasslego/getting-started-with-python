@@ -1,0 +1,23 @@
+{
+  "course": "Python Programming",
+  "students": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "grades": {
+        "midterm": 85,
+        "final": 92
+      },
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "grades": {
+        "midterm": 78,
+        "final": 88
+      },
+      "active": false
+    }
+  ]
+}

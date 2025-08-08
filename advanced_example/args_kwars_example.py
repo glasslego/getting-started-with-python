@@ -65,6 +65,7 @@ def flexible_function(*args, **kwargs):
     for key, value in kwargs.items():
         print(f"   {key} = {value}")
 
+
 def flexible_example():
     print("유연한 함수 사용 예제:")
     flexible_function(1, 2, 3, name="홍길동", age=30)
@@ -88,7 +89,7 @@ def order_food(customer_name, *foods, **details):
     print()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     add_example()
     kwargs_example()
     flexible_example()

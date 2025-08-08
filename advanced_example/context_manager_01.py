@@ -155,6 +155,6 @@ def analyze_context_manager():
     analyze_file_context_methods()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # check_file_status()
     analyze_context_manager()

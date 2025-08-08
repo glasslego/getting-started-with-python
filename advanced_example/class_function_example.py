@@ -1,5 +1,6 @@
 # 모든 특수 메서드를 포함한 간단한 클래스 예제
 
+
 class MyWallet(object):
     """지갑 클래스 - 모든 특수 메서드 데모"""
 
@@ -118,8 +119,8 @@ class MyWallet(object):
             print(f"⚠️  쇼핑 중 문제 발생: {exc_value}")
         return False
 
-if __name__ == '__main__':
 
+if __name__ == "__main__":
     # 1. 기본 생성 및 문자열 표현
     print("1. 지갑 생성 및 기본 정보")
     wallet = MyWallet("철수", 10000)

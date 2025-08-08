@@ -11,8 +11,7 @@ Python의 object 클래스는 어디서 구현되고 있을까?
 - Include/cpython/object.h: CPython 전용 정의
 """
 
-if __name__ == '__main__':
-
+if __name__ == "__main__":
     print("=== Python object 클래스 구현 위치 탐구 ===\n")
 
     # 1. object 클래스 기본 정보 확인
@@ -33,12 +32,10 @@ if __name__ == '__main__':
     print("2. object 메서드들의 구현 정보")
     print("-" * 40)
 
-    import types
-
     # object의 모든 메서드 분석
     object_methods = {}
     for name in dir(object):
-        if not name.startswith('__doc__'):  # __doc__ 제외
+        if not name.startswith("__doc__"):  # __doc__ 제외
             method = getattr(object, name)
             object_methods[name] = method
 
@@ -48,7 +45,7 @@ if __name__ == '__main__':
         print(f"  {name:15} : {method_type}")
 
         # 메서드의 구현 위치 정보
-        if hasattr(method, '__module__'):
+        if hasattr(method, "__module__"):
             print(f"                 모듈: {method.__module__}")
-        if hasattr(method, '__qualname__'):
+        if hasattr(method, "__qualname__"):
             print(f"                 전체이름: {method.__qualname__}")

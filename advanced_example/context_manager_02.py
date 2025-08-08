@@ -12,7 +12,7 @@ class SimpleContext:
         return False  # 예외를 다시 발생시킴
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("사용법:")
     with SimpleContext() as message:
         print(f"메시지: {message}")
