@@ -1,6 +1,12 @@
 import json
 import os
 
+"""
+
+Serialization(직렬화): Python 객체 → JSON 문자열
+Deserialization(역직렬화): JSON 문자열 → Python 객체
+"""
+
 
 def chap2_1_json_basics():
     """Python 객체와 JSON 문자열 간의 변환(직렬화/역직렬화) 예제를 실행합니다."""
