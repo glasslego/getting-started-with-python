@@ -1,6 +1,6 @@
 import json
 
-from flask import Flask, Response, jsonify, request
+from flask import Flask, Response, request
 
 app = Flask(__name__)
 app.config["JSON_AS_ASCII"] = False
@@ -59,7 +59,7 @@ def update_item(item_id):
         return custom_jsonify({"error": "Item not found"}), 404
 
     item["name"] = data["name"]
-    return jsonify(item)
+    return custom_jsonify(item)
 
 
 # DELETE: 특정 아이템 삭제하기

@@ -26,6 +26,8 @@ def chap1_2_data_types():
     # 문자열 (String)
     text = "Python"
     print(f"첫 글자: {text[0]}, 마지막 글자: {text[-1]}")
+    name = "Alice"
+    age = 25
     print(f"f-string 포매팅: 이름은 {name}, 나이는 {age}")  # f-string 예시
 
     # 불린형 (Boolean)
@@ -88,4 +90,4 @@ if __name__ == "__main__":
 
     my_name = "Alice"
     my_age = "25A"
-    print(f"이름: {my_name}, 나이: {int(age)}")
+    print(f"이름: {my_name}, 나이: {int(my_age)}")

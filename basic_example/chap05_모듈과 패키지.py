@@ -2,10 +2,9 @@
 import importlib
 import os
 import random
+from datetime import datetime
 
 import math_utils
-
-from datetime import datetime
 
 
 # 5.1 모듈

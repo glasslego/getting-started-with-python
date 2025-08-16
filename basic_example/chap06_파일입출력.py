@@ -4,9 +4,10 @@ import os
 import shutil
 from pathlib import Path
 
+
 def chap06_test():
-    with open('korean.txt', 'w') as f:  # 시스템 기본값 사용
-        f.write('안녕하세요')  # 한글 깨질 수 있음
+    with open("korean.txt", "w") as f:  # 시스템 기본값 사용
+        f.write("안녕하세요")  # 한글 깨질 수 있음
 
 
 # 6.1 파일 읽기와 쓰기
@@ -29,7 +30,6 @@ def chap6_1_file_io():
     with open(file_name, "r", encoding="utf-8") as f:
         print("--- 추가 후 내용 ---")
         print(f.read())
-
 
     # 6.1.3 CSV 파일 처리
     print("\n--- 6.1.3 CSV 파일 처리 ---")
