@@ -83,11 +83,15 @@ def main():
 
 # 스크립트가 직접 실행될 때만 main() 함수 호출
 if __name__ == "__main__":
-    # 이전 예제의 변수를 사용하기 위해 여기서 선언
-    # name = "Alice"
-    # age = 25
-    # main()
+    # 챕터 예제 전체 실행
+    main()
 
+    # 아래는 타입 변환에서 발생할 수 있는 예외를 간단히 보여주는 추가 예제입니다.
+    # chap08(예외처리)에서 더 자세히 다룹니다.
+    print("\n[추가 예제] 안전한 타입 변환")
     my_name = "Alice"
-    my_age = "25A"
-    print(f"이름: {my_name}, 나이: {int(my_age)}")
+    my_age = "25A"  # 잘못된 숫자 형식
+    try:
+        print(f"이름: {my_name}, 나이: {int(my_age)}")
+    except ValueError as e:
+        print(f"변환 실패(ValueError): {e}. 숫자만 포함된 문자열인지 확인하세요.")
